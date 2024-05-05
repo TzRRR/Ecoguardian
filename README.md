@@ -1,7 +1,1 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/qgEWmaMc)
-# Django Practice Assessment
-
-__Name:__
-
-__Computing ID:__
-
+Hello repo viewers! This Ecoguardian repo is the code for an environmental whistleblower web app. This app is developed under the Python Django framework and is deployed using Heroku. It was a group project from UVA CS3240 (Advanced Software Development Essential). I was the requirements manager. I collected user needs, analyzed them, and converted them into specifications and designs. I also integrated the Google Oauth API, implemented the incident submission page and some functionalities in the admin incident viewing page, and I did some UI designs. Hope you have fun using this app!
