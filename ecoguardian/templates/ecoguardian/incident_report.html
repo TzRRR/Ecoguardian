@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Incident Report Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Set background color */
+        }
+        .container {
+            margin-top: 50px; /* Adjust top margin for form */
+        }
+        h1 {
+            text-align: center; /* Center the heading */
+        }
+        form {
+            background-color: #fff; /* Set form background color */
+            padding: 20px; /* Add padding to form */
+            border-radius: 10px; /* Add border radius to form */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow to form */
+        }
+        button[type="submit"] {
+            background-color: #007bff; /* Set button background color */
+            color: #fff; /* Set button text color */
+            border: none; /* Remove button border */
+            padding: 10px 20px; /* Add padding to button */
+            border-radius: 5px; /* Add border radius to button */
+            cursor: pointer; /* Add cursor pointer */
+        }
+        button[type="submit"]:hover {
+            background-color: #0056b3; /* Change button background color on hover */
+        }
+        button[type="home"]{
+            background-color: #007bff; /* Set button background color */
+            color: #fff; /* Set button text color */
+            border: none; /* Remove button border */
+            padding: 10px 20px; /* Add padding to button */
+            border-radius: 5px; /* Add border radius to button */
+            cursor: pointer; /* Add cursor pointer */
+        }
+        button[type="home"]:hover{
+            background-color: #0056b3; /* Change button background color on hover */
+        }
+        footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: transparent;
+        color: grey;
+        text-align: left;
+        padding: 10px;
+        z-index: 0; /* Ensures that the footer stays behind the content */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/ecoguardian/main/"><button type="home">Home</button></a>
+        <h1>Incident Report</h1>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    {% include 'footer.html' %}
+</body>
+</html>
